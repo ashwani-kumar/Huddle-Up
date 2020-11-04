@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">huddlup</string>
+    <string name="nav_header_desc">Profile Image</string>
+    <string name="huge_jackman">Huge Jackman</string>
+    <string name="title_timeline">Timeline</string>
+    <string name="title_search">Search</string>
+    <string name="title_notification">Notifications</string>
+    <string name="title_message">Messages</string>
+</resources>

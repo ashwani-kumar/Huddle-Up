@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/timeline_navigation"
+    app:startDestination="@+id/navigation_timeline">
+    <fragment
+        android:id="@+id/navigation_timeline"
+        android:name="com.huddlup.app.TimelineFragment"
+        android:label="@string/title_timeline"
+        tools:layout="@layout/fragment_timeline" >
+        <action
+            android:id="@+id/action_navigation_goals_to_navigation_packdetail"
+            app:destination="@id/navigation_postdetail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_postdetail"
+        android:name="com.huddlup.app.PostDetailFragment"
+        tools:layout="@layout/fragment_post_detail" >
+        <argument
+            android:name="postid"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_navigation_postdetail_to_timeline_navigation"
+            app:destination="@+id/timeline_navigation" >
+        <argument
+            android:name="title"
+            app:argType="string"
+            app:nullable="true" />
+        </action>
+    </fragment>
+</navigation>

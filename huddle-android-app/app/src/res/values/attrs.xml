@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PostView">
+        <attr name="userImage" format="reference"/>
+        <attr name="userName" format="string"/>
+        <attr name="userHandle" format="string"/>
+        <attr name="postTime" format="string"/>
+        <attr name="postText" format="string"/>
+        <attr name="postType">
+            <flag name="text" value="1" />
+            <flag name="image" value="2" />
+            <flag name="video" value="3" />
+            <flag name="extended" value="4" />
+        </attr>
+    </declare-styleable>
+</resources>

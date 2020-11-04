@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0089EDD924E0064F00EE6D5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0089EDD824E0064F00EE6D5B /* AppDelegate.swift */; };
+		0089EDDB24E0064F00EE6D5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0089EDDA24E0064F00EE6D5B /* SceneDelegate.swift */; };
+		0089EDDD24E0064F00EE6D5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0089EDDC24E0064F00EE6D5B /* ViewController.swift */; };
+		0089EDE024E0064F00EE6D5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0089EDDE24E0064F00EE6D5B /* Main.storyboard */; };
+		0089EDE224E0065200EE6D5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0089EDE124E0065200EE6D5B /* Assets.xcassets */; };
+		0089EDE524E0065200EE6D5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0089EDE324E0065200EE6D5B /* LaunchScreen.storyboard */; };
+		0089EDF024E0065200EE6D5B /* HuddlupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0089EDEF24E0065200EE6D5B /* HuddlupTests.swift */; };
+		0089EDFB24E0065200EE6D5B /* HuddlupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0089EDFA24E0065200EE6D5B /* HuddlupUITests.swift */; };
+		0089EE1024E007E700EE6D5B /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0089EE0924E0069A00EE6D5B /* SharedCode.framework */; };
+		0089EE1124E007E700EE6D5B /* SharedCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0089EE0924E0069A00EE6D5B /* SharedCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0089EE1424E11EA100EE6D5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0089EE1324E11EA100EE6D5B /* ContentView.swift */; };
+		0089EE1624E90D9100EE6D5B /* ScreenFlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0089EE1524E90D9100EE6D5B /* ScreenFlowManager.swift */; };
+		0089EE1824E9117E00EE6D5B /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0089EE1724E9117E00EE6D5B /* CustomTabBarController.swift */; };
+		0089EE1A24EADE0700EE6D5B /* ScreenTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0089EE1924EADE0700EE6D5B /* ScreenTimeline.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0089EDEC24E0065200EE6D5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0089EDCD24E0064F00EE6D5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0089EDD424E0064F00EE6D5B;
+			remoteInfo = Huddlup;
+		};
+		0089EDF724E0065200EE6D5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0089EDCD24E0064F00EE6D5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0089EDD424E0064F00EE6D5B;
+			remoteInfo = Huddlup;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0089EE1224E007E700EE6D5B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0089EE1124E007E700EE6D5B /* SharedCode.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0089EDD524E0064F00EE6D5B /* Huddlup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Huddlup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0089EDD824E0064F00EE6D5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0089EDDA24E0064F00EE6D5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0089EDDC24E0064F00EE6D5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0089EDDF24E0064F00EE6D5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0089EDE124E0065200EE6D5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0089EDE424E0065200EE6D5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0089EDE624E0065200EE6D5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0089EDEB24E0065200EE6D5B /* HuddlupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuddlupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0089EDEF24E0065200EE6D5B /* HuddlupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuddlupTests.swift; sourceTree = "<group>"; };
+		0089EDF124E0065200EE6D5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0089EDF624E0065200EE6D5B /* HuddlupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuddlupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0089EDFA24E0065200EE6D5B /* HuddlupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuddlupUITests.swift; sourceTree = "<group>"; };
+		0089EDFC24E0065200EE6D5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0089EE0924E0069A00EE6D5B /* SharedCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharedCode.framework; path = "../../huddle-android-app/SharedCode/build/xcode-frameworks/SharedCode.framework"; sourceTree = "<group>"; };
+		0089EE1324E11EA100EE6D5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0089EE1524E90D9100EE6D5B /* ScreenFlowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenFlowManager.swift; sourceTree = "<group>"; };
+		0089EE1724E9117E00EE6D5B /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		0089EE1924EADE0700EE6D5B /* ScreenTimeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeline.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0089EDD224E0064F00EE6D5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0089EE1024E007E700EE6D5B /* SharedCode.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0089EDE824E0065200EE6D5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0089EDF324E0065200EE6D5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0089EDCC24E0064F00EE6D5B = {
+			isa = PBXGroup;
+			children = (
+				0089EDD724E0064F00EE6D5B /* Huddlup */,
+				0089EDEE24E0065200EE6D5B /* HuddlupTests */,
+				0089EDF924E0065200EE6D5B /* HuddlupUITests */,
+				0089EDD624E0064F00EE6D5B /* Products */,
+				0089EE0824E0069A00EE6D5B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0089EDD624E0064F00EE6D5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0089EDD524E0064F00EE6D5B /* Huddlup.app */,
+				0089EDEB24E0065200EE6D5B /* HuddlupTests.xctest */,
+				0089EDF624E0065200EE6D5B /* HuddlupUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0089EDD724E0064F00EE6D5B /* Huddlup */ = {
+			isa = PBXGroup;
+			children = (
+				0089EDD824E0064F00EE6D5B /* AppDelegate.swift */,
+				0089EDDA24E0064F00EE6D5B /* SceneDelegate.swift */,
+				0089EDDC24E0064F00EE6D5B /* ViewController.swift */,
+				0089EDDE24E0064F00EE6D5B /* Main.storyboard */,
+				0089EDE124E0065200EE6D5B /* Assets.xcassets */,
+				0089EDE324E0065200EE6D5B /* LaunchScreen.storyboard */,
+				0089EDE624E0065200EE6D5B /* Info.plist */,
+				0089EE1324E11EA100EE6D5B /* ContentView.swift */,
+				0089EE1524E90D9100EE6D5B /* ScreenFlowManager.swift */,
+				0089EE1724E9117E00EE6D5B /* CustomTabBarController.swift */,
+				0089EE1924EADE0700EE6D5B /* ScreenTimeline.swift */,
+			);
+			path = Huddlup;
+			sourceTree = "<group>";
+		};
+		0089EDEE24E0065200EE6D5B /* HuddlupTests */ = {
+			isa = PBXGroup;
+			children = (
+				0089EDEF24E0065200EE6D5B /* HuddlupTests.swift */,
+				0089EDF124E0065200EE6D5B /* Info.plist */,
+			);
+			path = HuddlupTests;
+			sourceTree = "<group>";
+		};
+		0089EDF924E0065200EE6D5B /* HuddlupUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0089EDFA24E0065200EE6D5B /* HuddlupUITests.swift */,
+				0089EDFC24E0065200EE6D5B /* Info.plist */,
+			);
+			path = HuddlupUITests;
+			sourceTree = "<group>";
+		};
+		0089EE0824E0069A00EE6D5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0089EE0924E0069A00EE6D5B /* SharedCode.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0089EDD424E0064F00EE6D5B /* Huddlup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0089EDFF24E0065200EE6D5B /* Build configuration list for PBXNativeTarget "Huddlup" */;
+			buildPhases = (
+				0089EDD124E0064F00EE6D5B /* Sources */,
+				0089EDD224E0064F00EE6D5B /* Frameworks */,
+				0089EDD324E0064F00EE6D5B /* Resources */,
+				0089EE1224E007E700EE6D5B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Huddlup;
+			productName = Huddlup;
+			productReference = 0089EDD524E0064F00EE6D5B /* Huddlup.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0089EDEA24E0065200EE6D5B /* HuddlupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0089EE0224E0065200EE6D5B /* Build configuration list for PBXNativeTarget "HuddlupTests" */;
+			buildPhases = (
+				0089EDE724E0065200EE6D5B /* Sources */,
+				0089EDE824E0065200EE6D5B /* Frameworks */,
+				0089EDE924E0065200EE6D5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0089EDED24E0065200EE6D5B /* PBXTargetDependency */,
+			);
+			name = HuddlupTests;
+			productName = HuddlupTests;
+			productReference = 0089EDEB24E0065200EE6D5B /* HuddlupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0089EDF524E0065200EE6D5B /* HuddlupUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0089EE0524E0065200EE6D5B /* Build configuration list for PBXNativeTarget "HuddlupUITests" */;
+			buildPhases = (
+				0089EDF224E0065200EE6D5B /* Sources */,
+				0089EDF324E0065200EE6D5B /* Frameworks */,
+				0089EDF424E0065200EE6D5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0089EDF824E0065200EE6D5B /* PBXTargetDependency */,
+			);
+			name = HuddlupUITests;
+			productName = HuddlupUITests;
+			productReference = 0089EDF624E0065200EE6D5B /* HuddlupUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0089EDCD24E0064F00EE6D5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Ashwani Kumar";
+				TargetAttributes = {
+					0089EDD424E0064F00EE6D5B = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					0089EDEA24E0065200EE6D5B = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 0089EDD424E0064F00EE6D5B;
+					};
+					0089EDF524E0065200EE6D5B = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 0089EDD424E0064F00EE6D5B;
+					};
+				};
+			};
+			buildConfigurationList = 0089EDD024E0064F00EE6D5B /* Build configuration list for PBXProject "Huddlup" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0089EDCC24E0064F00EE6D5B;
+			productRefGroup = 0089EDD624E0064F00EE6D5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0089EDD424E0064F00EE6D5B /* Huddlup */,
+				0089EDEA24E0065200EE6D5B /* HuddlupTests */,
+				0089EDF524E0065200EE6D5B /* HuddlupUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0089EDD324E0064F00EE6D5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0089EDE524E0065200EE6D5B /* LaunchScreen.storyboard in Resources */,
+				0089EDE224E0065200EE6D5B /* Assets.xcassets in Resources */,
+				0089EDE024E0064F00EE6D5B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0089EDE924E0065200EE6D5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0089EDF424E0065200EE6D5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0089EDD124E0064F00EE6D5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0089EDDD24E0064F00EE6D5B /* ViewController.swift in Sources */,
+				0089EE1A24EADE0700EE6D5B /* ScreenTimeline.swift in Sources */,
+				0089EE1624E90D9100EE6D5B /* ScreenFlowManager.swift in Sources */,
+				0089EE1824E9117E00EE6D5B /* CustomTabBarController.swift in Sources */,
+				0089EDD924E0064F00EE6D5B /* AppDelegate.swift in Sources */,
+				0089EE1424E11EA100EE6D5B /* ContentView.swift in Sources */,
+				0089EDDB24E0064F00EE6D5B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0089EDE724E0065200EE6D5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0089EDF024E0065200EE6D5B /* HuddlupTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0089EDF224E0065200EE6D5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0089EDFB24E0065200EE6D5B /* HuddlupUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0089EDED24E0065200EE6D5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0089EDD424E0064F00EE6D5B /* Huddlup */;
+			targetProxy = 0089EDEC24E0065200EE6D5B /* PBXContainerItemProxy */;
+		};
+		0089EDF824E0065200EE6D5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0089EDD424E0064F00EE6D5B /* Huddlup */;
+			targetProxy = 0089EDF724E0065200EE6D5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0089EDDE24E0064F00EE6D5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0089EDDF24E0064F00EE6D5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0089EDE324E0065200EE6D5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0089EDE424E0065200EE6D5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0089EDFD24E0065200EE6D5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/ashwanikumar/huddle-android-app/SharedCode/build/xcode-frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0089EDFE24E0065200EE6D5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/ashwanikumar/huddle-android-app/SharedCode/build/xcode-frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0089EE0024E0065200EE6D5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86R42B8XFR;
+				INFOPLIST_FILE = Huddlup/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huddlup.app.Huddlup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0089EE0124E0065200EE6D5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86R42B8XFR;
+				INFOPLIST_FILE = Huddlup/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huddlup.app.Huddlup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0089EE0324E0065200EE6D5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86R42B8XFR;
+				INFOPLIST_FILE = HuddlupTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huddlup.app.HuddlupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Huddlup.app/Huddlup";
+			};
+			name = Debug;
+		};
+		0089EE0424E0065200EE6D5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86R42B8XFR;
+				INFOPLIST_FILE = HuddlupTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huddlup.app.HuddlupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Huddlup.app/Huddlup";
+			};
+			name = Release;
+		};
+		0089EE0624E0065200EE6D5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86R42B8XFR;
+				INFOPLIST_FILE = HuddlupUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huddlup.app.HuddlupUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Huddlup;
+			};
+			name = Debug;
+		};
+		0089EE0724E0065200EE6D5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86R42B8XFR;
+				INFOPLIST_FILE = HuddlupUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huddlup.app.HuddlupUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Huddlup;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0089EDD024E0064F00EE6D5B /* Build configuration list for PBXProject "Huddlup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0089EDFD24E0065200EE6D5B /* Debug */,
+				0089EDFE24E0065200EE6D5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0089EDFF24E0065200EE6D5B /* Build configuration list for PBXNativeTarget "Huddlup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0089EE0024E0065200EE6D5B /* Debug */,
+				0089EE0124E0065200EE6D5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0089EE0224E0065200EE6D5B /* Build configuration list for PBXNativeTarget "HuddlupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0089EE0324E0065200EE6D5B /* Debug */,
+				0089EE0424E0065200EE6D5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0089EE0524E0065200EE6D5B /* Build configuration list for PBXNativeTarget "HuddlupUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0089EE0624E0065200EE6D5B /* Debug */,
+				0089EE0724E0065200EE6D5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0089EDCD24E0064F00EE6D5B /* Project object */;
+}

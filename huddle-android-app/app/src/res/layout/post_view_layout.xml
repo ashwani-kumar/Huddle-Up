@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/hugh"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Huge Jackman"
+        android:layout_marginStart="8dp"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/profile_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_profile_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:text="\@huge_jackman"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_profile_name"
+        app:layout_constraintEnd_toStartOf="@+id/tv_post_time"
+        app:layout_constraintStart_toEndOf="@+id/tv_profile_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_post_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3h"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_profile_handle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_post_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:maxWidth="270dp"
+        android:textSize="20sp"
+        android:text="To make room for more expression, we will now count all emojis as equal—including those with gender‍‍‍ ‍‍and skin tone modifiers 👍🏻👍🏽👍🏿. This is now reflected in Twitter-Text, our Open Source library. "
+        app:layout_constraintStart_toEndOf="@+id/profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/tv_profile_name" />
+
+    <Button
+        android:id="@+id/btn_comment"
+        android:layout_width="52dp"
+        android:layout_height="32dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/post_action_reply_drawable"
+        android:text="301"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_post_text"
+        app:layout_constraintTop_toBottomOf="@+id/tv_post_text" />
+
+    <Button
+        android:id="@+id/btn_repost"
+        android:layout_width="52dp"
+        android:layout_height="32dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/post_action_repost_drawable"
+        android:text="301"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_comment"
+        app:layout_constraintTop_toBottomOf="@+id/tv_post_text"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ToggleButton
+        android:id="@+id/btn_like"
+        android:layout_width="52dp"
+        android:layout_height="32dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/post_action_like_drawable_outlined"
+        android:textOff="301"
+        android:textOn="301"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_repost"
+        app:layout_constraintTop_toBottomOf="@+id/tv_post_text" />
+
+    <ImageButton
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/post_action_share_drawable"
+        app:layout_constraintStart_toEndOf="@+id/btn_like"
+        app:layout_constraintTop_toBottomOf="@+id/tv_post_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

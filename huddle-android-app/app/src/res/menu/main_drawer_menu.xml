@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_account_box"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_goal"
+            android:icon="@mipmap/ic_list_alt"
+            android:title="Lists" />
+        <item
+            android:id="@+id/nav_add"
+            android:icon="@mipmap/ic_chat"
+            android:title="Topics" />
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@mipmap/ic_bookmark"
+            android:title="Bookmarks" />
+        <item
+            android:id="@+id/nav_moments"
+            android:icon="@mipmap/ic_flash_on"
+            android:title="Moments" />
+    </group>
+</menu>
